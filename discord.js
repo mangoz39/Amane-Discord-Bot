@@ -1,5 +1,6 @@
 const { Client } = require('discord.js');
 const ytdl = require('ytdl-core');
+const { token } = require('./token.json');
 const { prefix } = require('./config.json');
 const client = new Client();
 
@@ -213,4 +214,4 @@ client.on('ready', () => {
     console.log(`屁眼已就緒`);
 });
 
-client.login('ODQ5OTg0ODM2MTEwMjU0MTMw.YLjIEA.87Dxyb4d1Tc5zX4XrkWPYnNKIlw');
+client.login(token);
