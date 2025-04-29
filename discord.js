@@ -4,7 +4,6 @@ const { token } = require('./token.json');
 const { prefix } = require('./config.json');
 const client = new Client();
 
-// 建立一個類別來管理 Property 及 Method
 class Music {
 
     constructor() {
@@ -16,7 +15,7 @@ class Music {
 
     async join(msg) {
         this.connection[msg.guild.id] = await msg.member.voice.channel.join();
-        msg.channel.send('胖寶寶的老婆天音來囉 <3 ٩(●˙▿˙●)۶')
+        msg.channel.send('天音來囉 <3 ٩(●˙▿˙●)۶')
     }
 
     async play(msg) {
